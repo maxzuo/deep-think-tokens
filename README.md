@@ -22,7 +22,7 @@ Key applications include:
 pip install git+https://github.com/maxzuo/deep-think-tokens.git
 ```
 
-## Usage
+## Example Usage
 
 ```python
 from deep_think_tokens import (
@@ -33,7 +33,7 @@ from deep_think_tokens import (
 from transformers import AutoModelForCausalLM
 
 # Load a model
-model = AutoModelForCausalLM.from_pretrained('your-model')
+model = AutoModelForCausalLM.from_pretrained('Qwen/Qwen2.5-1.5B-Instruct')
 
 # Or add hooks for deep thinking tokens
 tracker = add_deep_thinking_tokens_hooks(model)
@@ -48,6 +48,5 @@ results = tracker.collect()
 plot_divergences(results, tokens=['token1', 'token2', ...])
 
 # Calculate deep thinking ratio
-dtr = deep_thinking_ratio(results, r=0.5, p=0.5)
-
+dtr = deep_thinking_ratio(results, g=0.5, p=0.9)
 ```
