@@ -11,3 +11,7 @@ torch = "*"
 transformers = "*"
 matplotlib = "*"
 numpy = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
