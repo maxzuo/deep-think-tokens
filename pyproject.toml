@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "deep-think-tokens"
+version = "0.1.0"
+description = "Track Deep-Thinking Tokens in Transformer Models"
+readme = "README.md"
+authors = ["Max Zuo <zuo@brown.edu>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+torch = "*"
+transformers = "*"
+matplotlib = "*"
+numpy = "*"
