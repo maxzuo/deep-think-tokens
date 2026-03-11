@@ -19,6 +19,12 @@ Key applications include:
 ## Installation
 
 ```bash
+pip install deep-think-tokens
+```
+
+Or install directly from GitHub:
+
+```bash
 pip install git+https://github.com/maxzuo/deep-think-tokens.git
 ```
 
