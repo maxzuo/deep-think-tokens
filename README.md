@@ -28,6 +28,7 @@ pip install git+https://github.com/maxzuo/deep-think-tokens.git
 from deep_think_tokens import (
     add_deep_thinking_tokens_hooks,
     plot_divergences,
+    deep_thinking_ratio,
 )
 from transformers import AutoModelForCausalLM
 
@@ -45,5 +46,8 @@ results = tracker.collect()
 
 # Plot divergences
 plot_divergences(results, tokens=['token1', 'token2', ...])
-```
 
+# Calculate deep thinking ratio
+dtr = deep_thinking_ratio(results, r=0.5, p=0.5)
+
+```
